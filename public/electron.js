@@ -11,8 +11,9 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: `file://${path.join(__dirname, '../public/logo192.png')}`,
   });
-
+  win.removeMenu();
   // and load the index.html of the app.
   // win.loadFile("index.html");
   win.loadURL(
